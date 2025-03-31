@@ -5,10 +5,13 @@
 }
 
 .customCalendar {
+    box-sizing: border-box;
     font-family: 'Cormorant', Arial, sans-serif;
     font-size: 24px;
-    border-radius: 20px;
+    // border-radius: 20px;
     pointer-events: none; 
+    padding: 5px 15px;
+    border: none;
 
     abbr {
         text-decoration: none;
@@ -22,17 +25,18 @@
     //     border-radius: 20%;
     // }
 }
-// :global(.react-calendar__navigation button:hover) {
-//     background: rgb(222, 225, 225) !important;
-//     border-top-left-radius: 20px;
-//     border-top-right-radius: 20px;
-//     border-bottom-right-radius: 0;
-//     border-bottom-left-radius: 0;
-//     pointer-events: none; 
-// }
+:global(.react-calendar__navigation span) {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+:global(.react-calendar__navigation) {
+    margin-bottom: 0.9em;
+}
 :global(.react-calendar__tile--active) {
     border-bottom: 1px solid red !important;
     background: none;
+    border-radius: 50%;
     color: red;
     font-size: 1.1em;
     pointer-events: none; 
@@ -40,3 +44,17 @@
 :global(.react-calendar__month-view__days__day--weekend) {
     color: rgb(151, 149, 149);
 }
+.dateHeader {
+    font-size: 32px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-weight: 700;
+}
+.dateHeader span{
+    font-size: 40px;
+    padding-top: -10px;
+    // text-transform: uppercase;
+}
+  
