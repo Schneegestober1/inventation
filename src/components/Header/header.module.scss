@@ -1,0 +1,52 @@
+.header {
+  position: fixed;
+  padding: 1.5rem 7rem;
+  width: 100%;    
+  background-color: white;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .heading {
+    margin: 0;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .tools {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5rem 7rem;
+}
+  
+  .heading {
+    font-size: 20px;
+  }
+  
+  .tools {
+    margin-top: 10px;
+  }
+  }
+  
+
+@media (max-width: 426px) {
+  .header {
+    padding: 1.5rem 2rem;
+    gap: 20px;
+  }
+
+  .heading {
+    font-size: 18px;
+  }
+
+  .tools {
+    flex-direction: column;
+  }
+}
