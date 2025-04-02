@@ -3,16 +3,13 @@
     align-items: center;
     justify-content: center;
 }
-
 .customCalendar {
     box-sizing: border-box;
     font-family: 'Cormorant', Arial, sans-serif;
     font-size: 24px;
-    // border-radius: 20px;
     pointer-events: none; 
     padding: 5px 15px;
     border: none;
-
     abbr {
         text-decoration: none;
     }
@@ -20,10 +17,6 @@
         font-family: 'Cormorant', Arial, sans-serif;
         font-size: 24px;
     }
-    // button:hover {
-    //     background: lightgrey !important;
-    //     border-radius: 20%;
-    // }
 }
 :global(.react-calendar__navigation span) {
     display: block;
@@ -55,6 +48,5 @@
 .dateHeader span{
     font-size: 40px;
     padding-top: -10px;
-    // text-transform: uppercase;
 }
   
