@@ -39,10 +39,27 @@
         width: 400px;
         display: flex;
         text-align: center;
-        font-size: 24px;
+        font-size: 20px;
     }
     .img {
         width: 422px;
+        border-radius: 10px;
+        transition: 0.5s ease;
+        margin-top: 20px;
+        &:hover {
+            scale: (1.1);
+        }
     }
 }
+
+@media (max-width: 426px) {
+    .container{
+
+        .img {
+            width: 360px;
+        }
+    }
+
+  }
+  
 
