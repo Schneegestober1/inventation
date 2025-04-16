@@ -1,0 +1,56 @@
+.container {
+    // width: 100%;
+    padding: 1.5rem 7rem; 
+    box-sizing: border-box;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-top: 100px;
+    line-height: 47px;
+}
+.title::before,
+    .title::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 1px;
+        background-color: black;
+    }
+    .title::before {
+        top: -5px; 
+        left: 0;
+    }
+    .title::after {
+        bottom: -5px; 
+        right: 0;
+    }
+.text {
+    color: #6b6b6b;
+    font-weight: 600;
+}
+.heartbeat {
+  animation: beat 1s infinite;
+}
+@keyframes beat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(1.05);
+    }
+  }

@@ -8,7 +8,7 @@ const YandexMap = () => {
       window.ymaps.ready(() => {
         const map = new window.ymaps.Map(mapRef.current, {
           center: [55.949449, 38.086293],
-          zoom: 10,
+          zoom: 11,
         });
 
         const placemark = new window.ymaps.Placemark([55.949449, 38.086293]);
