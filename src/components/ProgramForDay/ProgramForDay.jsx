@@ -1,7 +1,6 @@
 import { Heart } from 'lucide-react'
 import styles from '../ProgramForDay/programForDay.module.scss'
 import ImageCard from '../ImageCard/ImageCard'
-import Line from '../Line/Line'
 
 const ProgramForDay = () => {
   return (

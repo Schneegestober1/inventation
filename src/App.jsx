@@ -1,4 +1,5 @@
 import DatePicker from './components/DatePicker/DatePicker'
+import DressCode from './components/DressCode/DressCode'
 import Header from './components/Header/Header'
 import Line from './components/Line/Line'
 import MainImage from './components/MainImage/MainImage'
@@ -19,6 +20,7 @@ function App() {
       <YandexMap />
       <ProgramForDay />
       <Line />
+      <DressCode />
     </>
   )
 }
