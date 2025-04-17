@@ -1,3 +1,4 @@
+import CountDown from './components/Countdown/CountDown'
 import DatePicker from './components/DatePicker/DatePicker'
 import DressCode from './components/DressCode/DressCode'
 import Header from './components/Header/Header'
@@ -16,11 +17,14 @@ function App() {
       <MainImage />
       <TextInfo />
       <DatePicker />
+      <Line />
       <Place />
       <YandexMap />
+      <Line />
       <ProgramForDay />
       <Line />
       <DressCode />
+      <CountDown />
     </>
   )
 }
