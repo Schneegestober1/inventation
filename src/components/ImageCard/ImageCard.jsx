@@ -1,10 +1,4 @@
-const ImageCard = ({
-  src,
-  alt = 'image',
-  size = 200,
-  wrapperStyle = {},
-  imageStyle = {},
-}) => {
+const ImageCard = ({ src, alt = 'image', size = 200, wrapperStyle = {}, imageStyle = {}}) => {
   const defaultWrapperStyle = {
     width: size,
     height: size,
