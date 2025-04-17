@@ -1,5 +1,6 @@
 import DatePicker from './components/DatePicker/DatePicker'
 import Header from './components/Header/Header'
+import Line from './components/Line/Line'
 import MainImage from './components/MainImage/MainImage'
 import YandexMap from './components/MapComponent/MapComponent'
 import Place from './components/Place/Place'
@@ -17,6 +18,7 @@ function App() {
       <Place />
       <YandexMap />
       <ProgramForDay />
+      <Line />
     </>
   )
 }

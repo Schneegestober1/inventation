@@ -1,5 +1,5 @@
 .container {
-    // width: 100%;
+    width: 100%;
     padding: 1.5rem 7rem; 
     box-sizing: border-box;
     font-size: 24px;
@@ -36,6 +36,7 @@
 .text {
     color: #6b6b6b;
     font-weight: 600;
+    margin-bottom: 50px;    
 }
 .heartbeat {
   animation: beat 1s infinite;
@@ -53,4 +54,43 @@
     75% {
       transform: scale(1.05);
     }
-  }
+}
+
+.timelineItems {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.timelineItem {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 50px;
+}
+
+
+
+.timelineImg {
+    flex-shrink: 0; 
+}
+
+.timelineContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    text-align: center;
+    & p {
+        margin: 0;
+    }
+}
+
+.timelineTime {
+    margin: 0;
+}
+
+.timelineText {
+    text-align: left;
+    font-size: 20px;
+}
