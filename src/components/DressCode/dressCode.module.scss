@@ -78,3 +78,11 @@
     color: black;
     font-size: 32px;
 }
+.orgBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+}

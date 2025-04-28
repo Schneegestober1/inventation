@@ -1,6 +1,9 @@
+
+import { QueryClient } from '@tanstack/react-query'
 import CountDown from './components/Countdown/CountDown'
 import DatePicker from './components/DatePicker/DatePicker'
 import DressCode from './components/DressCode/DressCode'
+import Form from './components/Form/Form'
 import Header from './components/Header/Header'
 import ImageCard from './components/ImageCard/ImageCard'
 import Line from './components/Line/Line'
@@ -22,6 +25,7 @@ function App() {
       objectFit: 'cover',
     };
 
+
   return (
     <>
       <Header />
@@ -37,6 +41,7 @@ function App() {
       <DressCode />
       <CountDown />
       <ImageCard src={'public/images/333.png'} wrapperStyle={wrapperStyle} imageStyle={imageStyle}/>
+      <Form />
     </>
   )
 }
