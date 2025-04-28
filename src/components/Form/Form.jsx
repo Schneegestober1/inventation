@@ -1,6 +1,7 @@
 import { useMutation } from "@tanstack/react-query"
 import { useForm } from "react-hook-form"
 import styles from "../Form/form.module.scss"
+import { useState } from "react";
 
 const alcoholOptions = [
   'Вино красное полусладкое',
@@ -23,12 +24,39 @@ const Form = () => {
     },
   });
 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const TOKEN = '7887069735:AAEB_Epe-U7b24Ek3mc-CWuHcC6Wu1CeEa4';
+  const CHAT_ID = '@WedRustamBotRus';
+  const API_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
   const mutation = useMutation({
     mutationFn: async (data) => {
       console.log('Отправка данных:', data);
+
+      const message = `
+      Новая анкета гостя:
+      Имя: ${data.name}
+      Пара: ${data.partnerName || 'Без пары'}
+      Предпочтения в алкоголе: ${data.alcoholPreferences.length ? data.alcoholPreferences.join(', ') : 'Не выбрано'}
+      Свой вариант: ${data.customAlcohol || 'Не указан'}`;
+
+      const response = await fetch(API_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          text: message,
+        })
+      })
+      if (!response.ok) {
+        throw new Error('Ошибка при отправке сообщения в Telegram');
+      }
     },
     onSuccess: () => {
-      alert('Форма успешно отправлена!');
+      setIsSubmitted(true);
       reset();
     },
     onError: () => {
@@ -87,8 +115,12 @@ const Form = () => {
         />
 
         <div>
-          <button type="submit" disabled={mutation.isPending} className={styles.button}>
-            {mutation.isPending ? 'Отправка...' : 'ОТПРАВИТЬ'}
+          <button type="submit" disabled={mutation.isPending || isSubmitted} className={styles.button}>
+          {mutation.isPending
+              ? 'Отправка...'
+              : isSubmitted
+                ? 'Отправлено!'
+                : 'ОТПРАВИТЬ'}
           </button>
         </div>
       </form>
