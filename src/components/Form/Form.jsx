@@ -1,6 +1,6 @@
-import { useMutation } from "@tanstack/react-query";
-import { useForm } from "react-hook-form";
-
+import { useMutation } from "@tanstack/react-query"
+import { useForm } from "react-hook-form"
+import styles from "../Form/form.module.scss"
 
 const alcoholOptions = [
   'Вино красное полусладкое',
@@ -37,34 +37,36 @@ const Form = () => {
   });
 
   const onSubmit = (data) => {
+    event.preventDefault();
     mutation.mutate(data);
   };
 
   return (
-    <section>
+    <section className={styles.form}>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <h2>АНКЕТА ГОСТЯ</h2>
-        <p>Будем очень признательны, если вы сообщите нам о своем решении до 10.03.2025 года</p>
+        <h2 className={styles.title}>АНКЕТА ГОСТЯ</h2>
+        <p className={styles.text1}>Будем очень признательны, если вы сообщите нам о своем решении до 10.03.2025 года</p>
 
-        <p>ВАШЕ ИМЯ И ФАМИЛИЯ</p>
+        <p className={styles.title}>ВАШЕ ИМЯ И ФАМИЛИЯ</p>
         <input
           type="text"
           placeholder="Ваше имя и фамилия"
           {...register('name', { required: 'Имя и фамилия обязательны' })}
+          className={styles.input}
         />
-         {errors.name && <p style={{ color: 'red' }}>{errors.name.message}</p>}
+         {errors.name && <p className={styles.error}>{errors.name.message}</p>}
 
-        <p>ЕСЛИ ПЛАНИРУЕТЕ ПРИЙТИ С ПАРОЙ, УКАЖИТЕ ИМЯ И ФАМИЛИЮ:</p>
+        <p className={styles.title}>ЕСЛИ ПЛАНИРУЕТЕ ПРИЙТИ С ПАРОЙ, УКАЖИТЕ ИМЯ И ФАМИЛИЮ:</p>
         <input
           type="text"
           placeholder="Имя и фамилия пары"
           {...register('partnerName')}
+          className={styles.input}
         />
-        {errors.partnerName && <p style={{ color: 'red' }}>{errors.partnerName.message}</p>}
 
-        <p>УТОЧНИТЕ ВАШИ ПРЕДПОЧТЕНИЯ В АЛКОГОЛЕ:</p>
+        <p className={styles.title}>УТОЧНИТЕ ВАШИ ПРЕДПОЧТЕНИЯ В АЛКОГОЛЕ:</p>
         {alcoholOptions.map((option) => (
-          <label key={option} style={{ display: 'block' }}>
+          <label key={option} className={styles.option}>
             <input
               type="checkbox"
               value={option}
@@ -73,24 +75,23 @@ const Form = () => {
             {option}
           </label>
         ))}
-        {errors.alcoholPreferences && (
-          <p style={{ color: 'red' }}>Выберите хотя бы один алкогольный напиток</p>
-        )}
 
-        <p>Укажите свой вариант, если это необходимо</p>
+        <p className={styles.title}>Укажите свой вариант, если это необходимо</p>
         <input
           type="text"
           placeholder="Ваш вариант"
           {...register('customAlcohol')}
+          className={styles.input}
         />
-        {errors.customAlcohol && <p style={{ color: 'red' }}>{errors.customAlcohol.message}</p>}
 
-        <button type="submit" disabled={mutation.isPending}>
-          {mutation.isPending ? 'Отправка...' : 'ОТПРАВИТЬ'}
-        </button>
+        <div>
+          <button type="submit" disabled={mutation.isPending} className={styles.button}>
+            {mutation.isPending ? 'Отправка...' : 'ОТПРАВИТЬ'}
+          </button>
+        </div>
       </form>
 
-      <h3>С ЛЮБОВЬЮ, ВИКТОР И ПОЛИНА!</h3>
+      <h3 className={styles.title}>С ЛЮБОВЬЮ, <br /> ВИКТОР И ПОЛИНА!</h3>
     </section>
   );
 };
