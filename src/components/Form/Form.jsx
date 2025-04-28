@@ -71,7 +71,9 @@ const Form = () => {
               type="checkbox"
               value={option}
               {...register('alcoholPreferences')}
+              className={styles.realCheckbox}
             />
+            <span className={styles.customCheckbox}></span>
             {option}
           </label>
         ))}
