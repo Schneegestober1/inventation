@@ -43,6 +43,13 @@
 .button:hover {
     scale: 1.1;
 }
+.disabledButton {
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.disabledButton:hover {
+    scale: none;
+}
 .error {
     font-size: 20px;
     color: red;

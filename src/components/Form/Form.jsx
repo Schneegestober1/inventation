@@ -115,11 +115,11 @@ const Form = () => {
         />
 
         <div>
-          <button type="submit" disabled={mutation.isPending || isSubmitted} className={styles.button}>
+          <button type="submit" disabled={mutation.isPending || isSubmitted}  className={`${styles.button} ${isSubmitted ? styles.disabledButton : ''}`}>
           {mutation.isPending
               ? 'Отправка...'
               : isSubmitted
-                ? 'Отправлено!'
+                ? 'Отправлено, спасибо!'
                 : 'ОТПРАВИТЬ'}
           </button>
         </div>
