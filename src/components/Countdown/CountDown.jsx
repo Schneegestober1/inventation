@@ -59,7 +59,7 @@ export const CountDown = () => {
 	
 	return (
 		<section className={styles.container}>
-			<h2>ДО НАШЕЙ СВАДЬБЫ ОСТАЛОСЬ:</h2>
+			<h2 className={styles.title}>ДО НАШЕЙ СВАДЬБЫ ОСТАЛОСЬ:</h2>
 			<div className={styles.countDownBox}>
 				<div className={styles.countDown}>{timeLeft.days} <span>{getPlural(+timeLeft.days, 'день', 'дня', 'дней')}</span></div>
 				<div className={styles.countDownLine}></div>

@@ -85,4 +85,18 @@
     align-items: center;
     border: 1px solid black;
     padding: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 426px) {
+    .text1 {
+        width: 320px;
+        font-size: 20px;
+    }
+    .text {
+        width: 300px;
+        text-align: center;
+    }
+    
 }

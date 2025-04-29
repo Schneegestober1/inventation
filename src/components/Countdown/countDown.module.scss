@@ -29,4 +29,18 @@
     height: 200px;
     border-radius: 16px;
     object-fit: cover;
-  }
+}
+.title { 
+    text-align: center;
+}
+
+@media (max-width: 426px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .countDown {
+        font-size: 32px;
+    }
+    
+}
