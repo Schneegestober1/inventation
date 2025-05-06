@@ -5,23 +5,19 @@ export const DressCode = () => {
 	return (
 		<section className={styles.container}>
 			<h2 className={styles.title}>ДРЕСС-КОД</h2>
-			<p className={styles.text1}>Мы очень старались сделать праздник красивым и гармоничным.<br className={styles.br} />Будем благодарны, если вы поддержите стиль и цветовую гамму нашей свадьбы!</p>
-			<h3>ЛЕДИ</h3>
-			<p className={styles.text}>Образы в пастельных оттенках: </p>
-			<div className={styles.rectanglesBox}>
-				<div className={styles.rectangleWomen}></div>
-				<div className={styles.rectangleWomen}></div>
-				<div className={styles.rectangleWomen}></div>
-			</div>
-			<p className={styles.text}>Разные оттенки розового и зеленого цвета</p>
-			<h3>ДЖЕНТЕЛЬМЕНЫ</h3>
-			<p className={styles.text}>Образы в оттенках:</p>
-			<div className={styles.rectanglesBox}>
-				<div className={styles.rectangleMen}></div>
-				<div className={styles.rectangleMen}></div>
-				<div className={styles.rectangleMen}></div>
-			</div>
-			<p className={styles.text}>Черный, голубой, зеленый</p>
+			<p className={styles.text1}>Для нас самое главное — ваше присутствие, поэтому мы не устанавливаем дресс-код.<br /> Мы вложили душу в оформление и постарались сделать праздник красивым и гармоничным.<br className={styles.br} />Будем благодарны, если вы поддержите стиль и цветовую гамму нашей свадьбы!</p>
+			<h3>ОСНОВНЫЕ ЦВЕТА</h3>
+			<div className={styles.colorsBox}>
+				<div className={styles.color}></div>
+				<div className={styles.color}></div>
+			</div> 
+			<h3>ДОПОЛНИТЕЛЬНЫЕ ЦВЕТА</h3>
+			<div className={styles.colorsBox}>
+				<div className={styles.colorExtra}></div>
+				<div className={styles.colorExtra}></div>
+				<div className={styles.colorExtra}></div>
+				<div className={styles.colorExtra}></div>
+			</div> 
 			<h2 className={styles.title}>ПОЖЕЛАНИЯ</h2>
 			<h3>-ГОРЬКО-</h3>
 			<p className={styles.text1}>Будем благодарны, если вы воздержитесь от частых криков «Горько» и белого цвета в наряде у дам. <br />В белом только невеста!</p>

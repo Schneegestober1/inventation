@@ -39,39 +39,40 @@
 .text1 {
     text-align: center;
 }
-.rectanglesBox {
+.color {
+    width: 100px;
+    height: 40px;
+    &:nth-child(1) {
+        background-color: black;
+    }
+      
+    &:nth-child(2) {
+        box-sizing: border-box;
+        background-color: white;
+        border: 1px solid black;
+    }
+}
+.colorExtra {
+    width: 100px;
+    height: 40px;
+    &:nth-child(1) {
+        background-color: gray;
+    }
+      
+    &:nth-child(2) {
+        background-color: rgb(3, 65, 3);
+    }
+    &:nth-child(3) {
+        background-color: rgb(224, 182, 125);
+    }
+    &:nth-child(4) {
+        background-color: rgb(124, 50, 3);
+    }
+}
+.colorsBox {
     display: flex;
     gap: 10px;
-}
-.rectangleWomen {
-    width: 100px;
-    height: 40px;
-    &:nth-child(1) {
-        background-color: red;
-    }
-      
-    &:nth-child(2) {
-        background-color: green;
-    }
-      
-    &:nth-child(3) {
-        background-color: blue;
-    }
-}
-.rectangleMen {
-    width: 100px;
-    height: 40px;
-    &:nth-child(1) {
-        background-color: red;
-    }
-      
-    &:nth-child(2) {
-        background-color: green;
-    }
-      
-    &:nth-child(3) {
-        background-color: blue;
-    }
+    align-items: center;
 }
 .phoneNumber {
     text-decoration: none;

@@ -16,7 +16,7 @@ const ProgramForDay = () => {
             <div className={styles.timelineItem}>
                 <ImageCard size={150} className={styles.timelineImg} src={'public/images/IMG_4337.jpg'} alt='WELCOME' />
                 <div className={styles.timelineContent}>
-                    <h3 className={styles.timelineTime}>15:00</h3>
+                    <h3 className={styles.timelineTime}>15:30</h3>
                     <p>WELCOME</p>
                 </div>
             </div>
@@ -37,14 +37,14 @@ const ProgramForDay = () => {
             <div className={styles.timelineItem}>
                 <ImageCard size={150} className={styles.timelineImg} src={'public/images/IMG_2951.jpg'} alt='WELCOME' />
                 <div className={styles.timelineContent}>
-                    <h3 className={styles.timelineTime}>21:30</h3>
+                    <h3 className={styles.timelineTime}>20:00</h3>
                     <p>ТОРТ</p>
                 </div>
             </div>
             <div className={styles.timelineItem}>
                 <ImageCard size={150} className={styles.timelineImg} src={'public/images/Wedding_day.jpg'} alt='WELCOME' />
                 <div className={styles.timelineContent}>
-                    <h3 className={styles.timelineTime}>23:00</h3>
+                    <h3 className={styles.timelineTime}>22:00</h3>
                     <p>ЗАВЕРШЕНИЕ <br /> ВЕЧЕРА</p>
                 </div>
             </div>
