@@ -1,5 +1,3 @@
-
-import { QueryClient } from '@tanstack/react-query'
 import CountDown from './components/Countdown/CountDown'
 import DatePicker from './components/DatePicker/DatePicker'
 import DressCode from './components/DressCode/DressCode'
@@ -28,7 +26,6 @@ function App() {
     const imageStyle1 = {
       objectFit: 'contain',
     };
-
 
   return (
     <>
