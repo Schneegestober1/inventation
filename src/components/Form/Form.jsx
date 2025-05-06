@@ -5,12 +5,11 @@ import { useState } from "react";
 
 const alcoholOptions = [
   'Вино красное полусладкое',
-  'Вино красное сухое',
   'Вино белое полусладкое',
   'Вино белое сухое',
   'Шампанское',
+  'Мартини',
   'Водка',
-  'Коньяк',
   'Виски',
 ];
 
@@ -19,7 +18,7 @@ const Form = () => {
     defaultValues: {
       name: '',
       partnerName: '',
-      alcoholPreferences: [],
+      alcoholPreferences: [], 
       customAlcohol: '',
     },
   });
@@ -65,7 +64,6 @@ const Form = () => {
   });
 
   const onSubmit = (data) => {
-    event.preventDefault();
     mutation.mutate(data);
   };
 
@@ -73,7 +71,7 @@ const Form = () => {
     <section className={styles.form}>
       <form onSubmit={handleSubmit(onSubmit)}>
         <h2 className={styles.title}>АНКЕТА ГОСТЯ</h2>
-        <p className={styles.text1}>Будем очень признательны, если вы сообщите нам о своем решении до 10.03.2025 года</p>
+        <p className={styles.text1}>Будем очень признательны, если вы сообщите нам о своем решении до 25.07.2025 года</p>
 
         <p className={styles.title}>ВАШЕ ИМЯ И ФАМИЛИЯ</p>
         <input
@@ -125,7 +123,7 @@ const Form = () => {
         </div>
       </form>
 
-      <h3 className={styles.title}>С ЛЮБОВЬЮ, <br /> ВИКТОР И ПОЛИНА!</h3>
+      <h3 className={styles.title}>С ЛЮБОВЬЮ, <br /> РУСТАМ И ВАЛЕРИЯ!</h3>
     </section>
   );
 };

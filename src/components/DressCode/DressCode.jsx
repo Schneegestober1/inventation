@@ -18,18 +18,22 @@ export const DressCode = () => {
 				<div className={styles.colorExtra}></div>
 				<div className={styles.colorExtra}></div>
 			</div> 
+			<div className={styles.colorsBox}>
+				<div className={styles.colorExtra1}></div>
+				<div className={styles.colorExtra1}></div>
+				<div className={styles.colorExtra1}></div>
+				<div className={styles.colorExtra1}></div>
+			</div> 
 			<h2 className={styles.title}>ПОЖЕЛАНИЯ</h2>
 			<h3>-ГОРЬКО-</h3>
 			<p className={styles.text1}>Будем благодарны, если вы воздержитесь от частых криков «Горько» и белого цвета в наряде у дам. <br />В белом только невеста!</p>
 			<h3>-ПОДАРКИ -</h3>
 			<p className={styles.text1}>Чтобы наши руки были свободны для объятий, мы будем рады легким подаркам в конвертах.</p>
-			<h3>-ЦВЕТЫ-</h3>
-			<p className={styles.text1}>Мы знаем, что на свадьбах принято дарить цветы, но мы не успеем насладиться их красотой, ведь они так быстро завянут.</p>
 			<div className={styles.orgBox}>
 				<h2>ОРГАНИЗАЦИОННЫЕ МОМЕНТЫ</h2>
 				<p>Если хотите устроить нам творческий подарок или сюрприз, свяжитесь с ведущим нашего мероприятия:</p>
-				<h3><strong>Александр</strong></h3>
-				<a className={styles.phoneNumber} href="tel:+79689156151">8 (968) 915-61-51</a>
+				<h3><strong>Андрей</strong></h3>
+				<a className={styles.phoneNumber} href="tel:+79776525099">8 (977) 652-50-99</a>
 			</div>
 		</section>
 	)

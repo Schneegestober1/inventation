@@ -58,7 +58,6 @@
     &:nth-child(1) {
         background-color: gray;
     }
-      
     &:nth-child(2) {
         background-color: rgb(3, 65, 3);
     }
@@ -68,11 +67,29 @@
     &:nth-child(4) {
         background-color: rgb(124, 50, 3);
     }
+
+}
+.colorExtra1 {
+    width: 100px;
+    height: 40px;
+    &:nth-child(1) {
+        background-color: #F5F5DC;
+    }
+    &:nth-child(2) {
+        background-color: olivedrab;
+    }
+    &:nth-child(3) {
+        background-color: #D2B48C;
+    }
+    &:nth-child(4) {
+        background-color: #C3B091;
+    }
 }
 .colorsBox {
     display: flex;
     gap: 10px;
     align-items: center;
+    margin-bottom: 10px;
 }
 .phoneNumber {
     text-decoration: none;
