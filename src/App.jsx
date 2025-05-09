@@ -28,6 +28,8 @@ function App() {
       filter: 'grayscale(100%)',
     };
 
+    
+
   return (
     <>
       <Header />
