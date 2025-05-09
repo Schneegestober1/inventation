@@ -5,13 +5,14 @@ export const DressCode = () => {
 	return (
 		<section className={styles.container}>
 			<h2 className={styles.title}>ДРЕСС-КОД</h2>
-			<p className={styles.text1}>Для нас самое главное — ваше присутствие, поэтому мы не устанавливаем строгий дресс-код.  <br className={styles.br} /> Однако, будем благодарны, если вы поддержите стиль и цветовую гамму нашей свадьбы,<br /> чтобы сделать праздник красивым и гармоничным.</p>
-			<h3>ОСНОВНЫЕ ЦВЕТА</h3>
+			<p className={styles.text1}>Для нас самое главное — ваше присутствие, поэтому мы не устанавливаем строгий дресс-код.</p>
+			<p className={styles.text1}> Однако, будем благодарны, если вы поддержите стиль и цветовую гамму нашей свадьбы, чтобы сделать праздник красивым и гармоничным.</p>
+			<h3 className={styles.mainColorsTitle}>ОСНОВНЫЕ ЦВЕТА</h3>
 			<div className={styles.colorsBox}>
 				<div className={styles.color}></div>
 				<div className={styles.color}></div>
 			</div> 
-			<h3>ДОПОЛНИТЕЛЬНЫЕ ЦВЕТА</h3>
+			<h3 className={styles.mainColorsTitle}>ДОПОЛНИТЕЛЬНЫЕ ЦВЕТА</h3>
 			<h4 className={styles.extraColorTitle}>И ИХ ОТТЕНКИ</h4>
 			<div className={styles.colorsBox}>
 				<div className={styles.colorExtra1}></div>

@@ -53,7 +53,7 @@
     }
 }
 .colorExtra {
-    width: 100px;
+    width: 90px;
     height: 40px;
     &:nth-child(1) {
         background-color: gray;
@@ -70,7 +70,7 @@
 
 }
 .colorExtra1 {
-    width: 100px;
+    width: 90px;
     height: 40px;
     &:nth-child(1) {
         background-color: #F5F5DC;
@@ -109,11 +109,14 @@
 
 @media (max-width: 426px) {
     .text1 {
-        width: 320px;
+        width: 400px;
         font-size: 20px;
     }
     .text {
         width: 300px;
+        text-align: center;
+    }
+    .mainColorsTitle{
         text-align: center;
     }
     

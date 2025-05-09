@@ -24,7 +24,8 @@ function App() {
     };
 
     const imageStyle1 = {
-      objectFit: 'contain',
+      objectFit: 'cover',
+      filter: 'grayscale(100%)',
     };
 
   return (
@@ -43,7 +44,7 @@ function App() {
       <CountDown />
       <ImageCard src={'public/images/333.png'} wrapperStyle={wrapperStyle} imageStyle={imageStyle}/>
       <Form />
-      <ImageCard src={'public/images/_1.jpg'} wrapperStyle={wrapperStyle} imageStyle={imageStyle1}/>
+      <ImageCard src={'public/images/hands.jpg'} wrapperStyle={wrapperStyle} imageStyle={imageStyle1}/>
     </>
   )
 }
