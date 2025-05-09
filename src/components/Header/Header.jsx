@@ -23,7 +23,7 @@ const Header = () => {
             <h1 className={styles.heading}>ПРИГЛАШЕНИЕ</h1>
           </div>
           <div className={styles.tools}>
-              <audio ref={audioRef} src="/audio\Niall_Horan_-_Black_And_White_68745396.mp3"></audio>
+              <audio ref={audioRef} src="/audio/Niall_Horan_-_Black_And_White_68745396.mp3"></audio>
             {isPlaying ? (
               <Volume2 size={28} onClick={togglePlay} />
             ) : (
