@@ -9,9 +9,9 @@ const Place = () => {
         <div className={styles.line} />
       </div>
       <h3 className={styles.headingSec}>Усадьба Гребнево</h3>
-      <p className={styles.text}>Адрес: Московская обл., городской округ Щёлково, усадьба Гребнево</p>
+      <p className={styles.text}>Адрес: Московская обл., городской округ Щёлково,<br /> усадьба Гребнево, зал «Трубецкой Холл»</p>
       <div>
-        <img className={styles.img} src="public/images/usadba_grebnevo_general_view-new.jpg" alt="usadba_grebnevo" />
+        <img className={styles.img} src="public\images\zdc-5949-1.jpg" alt="usadba_grebnevo" />
       </div>
       <h2 className={styles.heading}>КАК ДОБРАТЬСЯ</h2>
       <p className={styles.text}>Для вашего удобства мы подготовили карту. Надеемся, что вы легко найдете место проведения свадьбы и порадуете нас своим присутствием!</p>
