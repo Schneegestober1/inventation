@@ -44,9 +44,9 @@ function App() {
       <Line />
       <DressCode />
       <CountDown />
-      <ImageCard src={'public/images/333.png'} wrapperStyle={wrapperStyle} imageStyle={imageStyle}/>
+      <ImageCard src={'images/333.png'} wrapperStyle={wrapperStyle} imageStyle={imageStyle}/>
       <Form />
-      <ImageCard src={'public/images/hands.jpg'} wrapperStyle={wrapperStyle} imageStyle={imageStyle1}/>
+      <ImageCard src={'/images/hands.jpg'} wrapperStyle={wrapperStyle} imageStyle={imageStyle1}/>
     </>
   )
 }
