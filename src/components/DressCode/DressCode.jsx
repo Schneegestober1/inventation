@@ -35,7 +35,7 @@ export const DressCode = () => {
 			<div className={styles.orgBox}>
 				<h2>ОРГАНИЗАЦИОННЫЕ МОМЕНТЫ</h2>
 				<p>Для вашего удобства на территории усадьбы доступны варианты размещения. Если вы планируете остаться, подробности и бронирование — по ссылке: <a href="https://usadbagrebnevo.com/arenda-domov/">https://usadbagrebnevo.com/arenda-domov/</a></p>
-				<h3><strong><a href="https://usadbagrebnevo.com/arenda-domov/"></a></strong></h3>
+				<h3><strong><a href="https://usadbagrebnevo.com/arenda-domov/" target='_blank'></a></strong></h3>
 				<p>Если хотите устроить нам творческий подарок или сюрприз, свяжитесь с ведущим нашего мероприятия:</p>
 				<h3><strong>Андрей</strong></h3>
 				<a className={styles.phoneNumber} href="tel:+79776525099">8 (977) 652-50-99</a>
