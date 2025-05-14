@@ -71,7 +71,7 @@ const Form = () => {
     <section className={styles.form}>
       <form onSubmit={handleSubmit(onSubmit)}>
         <h2 className={styles.title}>АНКЕТА ГОСТЯ</h2>
-        <p className={styles.text1}>Будем очень признательны, если вы сообщите нам о своем решении до 25.07.2025 года</p>
+        <p className={styles.text1}>Будем очень признательны, если вы сообщите нам о своем решении до <strong>25.07.2025 года</strong></p>
 
         <p className={styles.title}>ВАШЕ ИМЯ И ФАМИЛИЯ</p>
         <input
