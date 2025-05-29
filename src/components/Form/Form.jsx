@@ -82,13 +82,13 @@ const Form = () => {
         />
          {errors.name && <p className={styles.error}>{errors.name.message}</p>}
 
-        <p className={styles.title}>ЕСЛИ ПЛАНИРУЕТЕ ПРИЙТИ С ПАРОЙ, УКАЖИТЕ ИМЯ И ФАМИЛИЮ:</p>
+        {/* <p className={styles.title}>ЕСЛИ ПЛАНИРУЕТЕ ПРИЙТИ С ПАРОЙ, УКАЖИТЕ ИМЯ И ФАМИЛИЮ:</p>
         <input
           type="text"
           placeholder="Имя и фамилия пары"
           {...register('partnerName')}
           className={styles.input}
-        />
+        /> */}
 
         <p className={styles.title}>УТОЧНИТЕ ВАШИ ПРЕДПОЧТЕНИЯ В АЛКОГОЛЕ:</p>
         {alcoholOptions.map((option) => (
